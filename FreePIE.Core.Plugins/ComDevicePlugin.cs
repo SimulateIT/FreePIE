@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -113,6 +113,9 @@ namespace FreePIE.Core.Plugins
             public float Yaw;
             public float Pitch;
             public float Roll;
+            public float X;
+            public float Y;
+            public float Z;
         }
     }
 
@@ -134,5 +137,21 @@ namespace FreePIE.Core.Plugins
         {
             get { return plugin.Data.Roll; }
         }
+		
+		public float x
+        {
+            get { return plugin.Data.X; }
+        }
+		
+		public float y
+        {
+            get { return plugin.Data.Y; }
+        }
+		
+		public float z
+        {
+            get { return plugin.Data.Z; }
+        }
+
     }
 }
